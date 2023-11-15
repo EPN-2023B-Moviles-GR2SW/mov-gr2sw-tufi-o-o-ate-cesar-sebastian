@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "509014421006",
+    "project_id": "b2023-grsw2-csto",
+    "storage_bucket": "b2023-grsw2-csto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509014421006:android:90a9429026445a328dd65f",
+        "android_client_info": {
+          "package_name": "com.example.b2023gr2sw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsg7w8fqSihZAjG8G3NIXeaya6EAc6OpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
