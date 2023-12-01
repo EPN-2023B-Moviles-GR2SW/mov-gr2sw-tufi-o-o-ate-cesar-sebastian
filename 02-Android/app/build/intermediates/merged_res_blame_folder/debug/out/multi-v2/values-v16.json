@@ -4,6 +4,25 @@
             "outputFile": "com.example.b2023gr2sw.app-mergeDebugResources-3:/values-v16/values-v16.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Usuario\\.gradle\\caches\\transforms-3\\a85e5ab3c6e9dcaed018474238b69e15\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Usuario\\.gradle\\caches\\transforms-3\\4cbf79f362a2e322c416fd94d9bc9278\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",

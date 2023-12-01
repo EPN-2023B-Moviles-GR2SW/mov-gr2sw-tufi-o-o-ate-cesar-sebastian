@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0035d17a-a7cb-4a08-817d-fa13c90c0194" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber01/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber01/src/main/kotlin/entidades/Condominio.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Deber01/src/main/kotlin/entidades/Departamento.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,8 @@
       <workItem from="1700051350093" duration="3469000" />
       <workItem from="1700056191604" duration="3632000" />
       <workItem from="1700568189690" duration="6375000" />
-      <workItem from="1700655710869" duration="2278000" />
+      <workItem from="1700655710869" duration="2914000" />
+      <workItem from="1700942723768" duration="11463000" />
     </task>
     <servers />
   </component>

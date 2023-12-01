@@ -27,6 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.B2023gr2sw" >
         <activity
+            android:name="com.example.b2023gr2sw.AResources"
+            android:exported="false" />
+        <activity
             android:name="com.example.b2023gr2sw.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
