@@ -14,5 +14,6 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDsg7w8fqSihZAjG8G3NIXeaya6EAc6OpM</string>
     <string name="google_storage_bucket" translatable="false">b2023-grsw2-csto.appspot.com</string>
     <string name="project_id" translatable="false">b2023-grsw2-csto</string>
+    <string name="saludo">Buenos dias</string>
     <style name="Theme.B2023gr2sw" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>

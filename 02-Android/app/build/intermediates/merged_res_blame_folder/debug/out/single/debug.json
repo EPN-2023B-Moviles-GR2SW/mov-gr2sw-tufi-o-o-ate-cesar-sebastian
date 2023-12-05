@@ -28,6 +28,10 @@
         "source": "com.example.b2023gr2sw.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.b2023gr2sw.app-merged_res-5:/layout_activity_main.xml.flat",
+        "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_main.xml"
+    },
+    {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "com.example.b2023gr2sw.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },

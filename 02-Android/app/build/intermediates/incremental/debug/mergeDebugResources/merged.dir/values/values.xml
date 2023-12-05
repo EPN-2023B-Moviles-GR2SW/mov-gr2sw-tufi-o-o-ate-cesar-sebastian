@@ -1955,6 +1955,7 @@
     <string name="project_id" translatable="false">b2023-grsw2-csto</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
+    <string name="saludo">Buenos dias</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbar_scrolling_view_behavior" translatable="false">
     com.google.android.material.search.SearchBar$ScrollingViewBehavior

@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">B2023gr2sw</string>
-    <string name="saludo">Buenos dias</string>
+    <string name="app_name" translatable="false">B2023gr2sw</string>
+    <string name="saludo" translatable="false">Buenos dias</string>
+    <string name="texto">Texto</string>
 </resources>

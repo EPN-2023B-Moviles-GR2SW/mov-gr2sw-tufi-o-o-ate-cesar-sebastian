@@ -9,7 +9,9 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id textView
 layout activity_aresources
+layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
@@ -19,6 +21,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
+string saludo
 style Theme.B2023gr2sw
 xml backup_rules
 xml data_extraction_rules
