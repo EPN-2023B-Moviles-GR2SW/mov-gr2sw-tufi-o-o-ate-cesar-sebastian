@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.b2023gr2sw.app-merged_res-5:/layout_activity_aciclo_vida.xml.flat",
+        "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_aciclo_vida.xml"
+    },
+    {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/xml_backup_rules.xml.flat",
         "source": "com.example.b2023gr2sw.app-main-7:/xml/backup_rules.xml"
     },
@@ -62,10 +66,6 @@
     {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.b2023gr2sw.app-main-7:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.b2023gr2sw.app-merged_res-5:/layout_activity_aresources.xml.flat",
-        "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_aresources.xml"
     },
     {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/xml_data_extraction_rules.xml.flat",

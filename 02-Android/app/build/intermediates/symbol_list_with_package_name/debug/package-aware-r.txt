@@ -1317,6 +1317,8 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color color_fondo
+color color_texto
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -2904,6 +2906,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_ciclo_vida
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2921,6 +2924,7 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id cl_ciclo_vida
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3258,6 +3262,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3413,7 +3418,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_aresources
+layout activity_aciclo_vida
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3677,6 +3682,7 @@ string status_bar_notification_info_overflow
 string switch_role
 string tab
 string template_percent
+string texto
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

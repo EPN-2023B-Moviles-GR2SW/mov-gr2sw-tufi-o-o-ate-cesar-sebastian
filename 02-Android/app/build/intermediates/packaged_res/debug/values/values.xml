@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="color_fondo">#FF55FF</color>
+    <color name="color_texto">#FFEE00</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">B2023gr2sw</string>
+    <string name="app_name" translatable="false">B2023gr2sw</string>
     <string name="gcm_defaultSenderId" translatable="false">509014421006</string>
     <string name="google_api_key" translatable="false">AIzaSyDsg7w8fqSihZAjG8G3NIXeaya6EAc6OpM</string>
     <string name="google_app_id" translatable="false">1:509014421006:android:90a9429026445a328dd65f</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDsg7w8fqSihZAjG8G3NIXeaya6EAc6OpM</string>
     <string name="google_storage_bucket" translatable="false">b2023-grsw2-csto.appspot.com</string>
     <string name="project_id" translatable="false">b2023-grsw2-csto</string>
-    <string name="saludo">Buenos dias</string>
+    <string name="saludo" translatable="false">Buenos dias</string>
+    <string name="texto">Texto</string>
     <style name="Theme.B2023gr2sw" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>
