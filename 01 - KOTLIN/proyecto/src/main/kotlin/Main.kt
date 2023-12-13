@@ -76,7 +76,7 @@ fun main() {
     // FOR EACH -> Unit
     // Iterar un arreglo
     val respuestaForEach: Unit = arregloDinamico
-        .forEach { valorActual: Int ->
+        .forEach { valorActual: In
             println("Valor actual: ${valorActual}")
         }
     // it (en ingles eso) significa el elemento iterado

@@ -11,11 +11,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7320a680-9100-49ee-83b1-de63545f17db" name="Changes" comment="Blistview">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/b2023gr2sw/BListView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/b2023gr2sw/BListView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_blist_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_blist_view.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7320a680-9100-49ee-83b1-de63545f17db" name="Changes" comment="Blistview 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,11 +201,19 @@
       <option name="project" value="LOCAL" />
       <updated>1702386391514</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Blistview 2">
+      <created>1702389221243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702389221243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Blistview" />
-    <option name="LAST_COMMIT_MESSAGE" value="Blistview" />
+    <MESSAGE value="Blistview 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Blistview 2" />
   </component>
 </project>
