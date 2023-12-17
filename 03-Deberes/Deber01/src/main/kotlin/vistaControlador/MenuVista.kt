@@ -1,5 +1,6 @@
 package vistaControlador
 
+import modelo.dao.CondominioDAO
 import modelo.dao.DepartamentoDAO
 
 class MenuVista {
@@ -8,31 +9,34 @@ class MenuVista {
     }
 
     private fun mostrarMenuVista() {
-        val contenidoMenu = "\nIngrese el número de la operación que desea utilizar:\n" +
-                "1. Operaciones CRUD en Departamento\n" +
-                "2. Operaciones CRUD en Condominio\n" +
-                "3. Finalizar\n"
-        println(contenidoMenu)
+        println(
+            "\nIngrese el número de la operación que desea utilizar:" +
+                    "\n1. Operaciones CRUD en Departamento" +
+                    "\n2. Operaciones CRUD en Condominio" +
+                    "\n3. Finalizar" +
+                    "\nOpción: "
+        )
         val opcion = readln().toInt()
         when (opcion) {
             1 -> {
-                val departamentoDAO = DepartamentoDAO()
-                if (departamentoDAO.getAll().isNotEmpty()) {
+                val condominioDAO = CondominioDAO()
+                if (condominioDAO.getAll().isNotEmpty()) {
                     DepartamentoVista()
                 } else {
-                    println("No existen condominios actualmente, debe crear uno primero.\n")
+                    println("\nNo existen condominios actualmente, debe crear uno primero.")
                     MenuVista()
                 }
             }
-
             2 -> {
                 CondominioVista()
             }
 
-            3 -> {}
+            3 -> {
+                print("\nFin de la aplicación")
+            }
 
             else -> {
-                println("Opción no valida, intentelo nuevamente")
+                println("\nOpción no valida, intentelo nuevamente")
                 mostrarMenuVista()
             }
         }

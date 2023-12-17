@@ -2906,7 +2906,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_anadir_list_view
 id btn_ciclo_vida
+id btn_ir_list_view
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3052,6 +3054,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lv_list_view
 id m3_side_sheet
 id marquee
 id masked
@@ -3419,6 +3422,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_aciclo_vida
+layout activity_blist_view
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

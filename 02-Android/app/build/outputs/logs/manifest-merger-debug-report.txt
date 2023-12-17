@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\USER\.gradle\caches\transforms-3\ecc211c41bad1dfa590859f2dcb2f5af\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\USER\.gradle\caches\transforms-3\3aaff50c99f548fc4c9fcabab7e39cab\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\USER\.gradle\caches\transforms-3\9f47729973a529c772d4249336b393c6\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -83,8 +83,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\USER\.g
 	xmlns:android
 		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:5:5-28:19
-INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:5:5-28:19
+ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:5:5-31:19
+INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:5:5-31:19
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\USER\.gradle\caches\transforms-3\ecc211c41bad1dfa590859f2dcb2f5af\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\USER\.gradle\caches\transforms-3\ecc211c41bad1dfa590859f2dcb2f5af\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\USER\.gradle\caches\transforms-3\3aaff50c99f548fc4c9fcabab7e39cab\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -127,30 +127,36 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\USER\.gradle\cache
 		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:13:9-53
 	android:dataExtractionRules
 		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.b2023gr2sw.ACicloVida
+activity#com.example.b2023gr2sw.BListView
 ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:16:13-39
-activity#com.example.b2023gr2sw.MainActivity
-ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:18:9-27:20
-	android:label
-		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:21:13-45
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:16:13-38
+activity#com.example.b2023gr2sw.ACicloVida
+ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
-		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:20:13-36
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:19:13-41
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:19:13-39
+activity#com.example.b2023gr2sw.MainActivity
+ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:21:9-30:20
+	android:label
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:24:13-45
+	android:exported
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:22:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml:28:27-74
 uses-sdk
 INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Moviles\repo\mov-gr2sw-tufino-onate-cesar-sebastian\02-Android\app\src\main\AndroidManifest.xml

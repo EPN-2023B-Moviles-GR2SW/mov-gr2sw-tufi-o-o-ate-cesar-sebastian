@@ -1,3 +1,4 @@
-0;1;César Tufiño;2;15.0;false;0
-1;2;Cecibel Oñate,3,20.0,true;0
-2;1;Ricardo Franco,3,30.0,true;1
+0;1;César Tufiño;2;15.0;false0
+1;2;Cecibel Oñate;3;20.0;true0
+2;1;Ricardo Franco;3;30.0;true1
+3;12;2eqwsedf;6;213.0;false0

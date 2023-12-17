@@ -1,5 +1,6 @@
 package modelo.dao
 
+import com.sun.org.apache.xpath.internal.operations.Bool
 import modelo.entidad.Departamento
 import java.io.File
 
@@ -40,30 +41,38 @@ class DepartamentoDAO {
     }
 
     fun create(departamento: Departamento) {
-        getAll().add(departamento)
-        val nuevaLinea = "${getAll().size-1};" +
+        val listaDepartamento = getAll()
+        if (listaDepartamento.isEmpty()){
+            departamento.setId(0)
+        } else{
+            departamento.setId(listaDepartamento.last().getId()?.plus(1)!!)
+        }
+        listaDepartamento.add(departamento)
+        val nuevaLinea = "${departamento.getId()};" +
                 "${departamento.getNumero()};" +
                 "${departamento.getInquilino()};" +
                 "${departamento.getCantidadDeHabitaciones()};" +
                 "${departamento.getArea()};" +
-                "${departamento.getTieneBalcon()}" +
+                "${departamento.getTieneBalcon()};" +
                 "${departamento.getCondominio().getId()}"
         departamentoDatos.appendText("$nuevaLinea\n")
+        println("\nDepartamento creado exitosamente")
     }
 
     fun update(departamentoActualizado: Departamento) {
-        val listaDeDepartamento = getAll()
-        listaDeDepartamento.forEachIndexed { index, departamento ->
+        val listaDepartamento = getAll()
+        listaDepartamento.forEachIndexed { index, departamento ->
             if (departamento.getId() == departamentoActualizado.getId()) {
-                listaDeDepartamento[index] = departamentoActualizado
+                listaDepartamento[index] = departamentoActualizado
                 actualizacionDeLineas()
+                println("Departamento actualizado correctamente")
                 return
             }
         }
     }
 
     private fun actualizacionDeLineas() {
-        val lineasActualizadas = DepartamentoDAO.listaDeDepartamentos.map {
+        val lineasActualizadas = listaDeDepartamentos.map {
             "${it.getId()};" +
                     "${it.getNumero()};" +
                     "${it.getInquilino()};" +
@@ -76,8 +85,21 @@ class DepartamentoDAO {
     }
 
     fun deleteById(id: Int) {
-        getAll().removeIf { departamento -> departamento.getId() == id }
-        actualizacionDeLineas()
+        val removido = getAll().removeIf { departamento -> departamento.getId() == id }
+        if (removido){
+            actualizacionDeLineas()
+            println("\nDepartamento eliminado correctamente.")
+        } else{
+            println("\nEl Departamento con ID $id no fue encontrado para eliminar.")
+        }
+    }
+
+    fun eliminarByCondominioId(id: Int) {
+        val removidos = getAll().removeIf { departamento -> departamento.getCondominio().getId() == id }
+        if (removidos){
+            println("\nDepartamentos relacionados eliminados correctamente.")
+            actualizacionDeLineas()
+        }
     }
 
 }

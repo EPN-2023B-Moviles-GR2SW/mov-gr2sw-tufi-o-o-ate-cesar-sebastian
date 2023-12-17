@@ -10,7 +10,7 @@ class CondominioDAO {
         .apply { takeIf { !exists() }?.run { createNewFile() } }
 
     companion object {
-        private var listaDeCondominios: ArrayList<Condominio> = arrayListOf<Condominio>()
+        private var listaDeCondominios: ArrayList<Condominio> = arrayListOf()
     }
 
     fun getById(id: Int): Condominio? {
@@ -40,22 +40,30 @@ class CondominioDAO {
     }
 
     fun create(condominio: Condominio) {
-        getAll().add(condominio)
-        val nuevaLinea = "${getAll().size-1};" +
+        val listaCondominio = getAll()
+        if (listaCondominio.isEmpty()) {
+            condominio.setId(0)
+        } else {
+            condominio.setId(listaCondominio.last().getId()?.plus(1)!!)
+        }
+        listaCondominio.add(condominio)
+        val nuevaLinea = "${condominio.getId()};" +
                 "${condominio.getNombre()};" +
                 "${condominio.getDireccion()};" +
                 "${condominio.getFechaDeConstruccion()};" +
                 "${condominio.getTienePiscina()};" +
                 "${condominio.getTieneCancha()}"
         condominioDatos.appendText("$nuevaLinea\n")
+        println("\nCondominio creado exitosamente")
     }
 
     fun update(condominioActualizado: Condominio) {
-        val listaDeCondominio = getAll()
-        listaDeCondominio.forEachIndexed { index, condominio ->
+        val listaCondominio = getAll()
+        listaCondominio.forEachIndexed { index, condominio ->
             if (condominio.getId() == condominioActualizado.getId()) {
-                listaDeCondominio[index] = condominioActualizado
+                listaCondominio[index] = condominioActualizado
                 actualizacionDeLineas()
+                println("Condominio actualizado correctamente")
                 return
             }
         }
@@ -74,8 +82,15 @@ class CondominioDAO {
     }
 
     fun deleteById(id: Int) {
-        getAll().removeIf { condominio -> condominio.getId() == id }
-        actualizacionDeLineas()
+        val departamentoDAO = DepartamentoDAO()
+        departamentoDAO.eliminarByCondominioId(id)
+        val removido = getAll().removeIf { condominio -> (condominio.getId() == id) }
+        if (removido) {
+            actualizacionDeLineas()
+            println("\nCondominio eliminado correctamente.")
+        } else {
+            println("\nEl Condominio con ID $id no fue encontrado para eliminar.")
+        }
     }
 
 }
