@@ -1,2 +1,2 @@
+0;La Primavera;De Los Mortiños Y Av. Eloy Alfaro, Quito;2001-12-13;false;true
 1;Los Pinos;Av. 17 de Septiembre Y Carapungo, Quito;2003-10-17;true;true
-2;Los soles;Llano Chico;2010-12-12;false;false
