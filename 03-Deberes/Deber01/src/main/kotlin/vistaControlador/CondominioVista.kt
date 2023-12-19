@@ -24,7 +24,6 @@ class CondominioVista {
                     "\n7. Finalizar" +
                     "\nOpción: "
         )
-        val departamentoDAO = DepartamentoDAO()
         val condominioDAO = CondominioDAO()
         val opcion = readln().toInt()
         when (opcion) {
