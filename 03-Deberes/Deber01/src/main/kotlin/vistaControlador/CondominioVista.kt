@@ -1,7 +1,6 @@
 package vistaControlador
 
 import modelo.dao.CondominioDAO
-import modelo.dao.DepartamentoDAO
 import modelo.entidad.Condominio
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -28,7 +27,7 @@ class CondominioVista {
         val opcion = readln().toInt()
         when (opcion) {
             1 -> {
-                var nuevoCondominio = Condominio()
+                val nuevoCondominio = Condominio()
                 println("Ingrese la información del nuevo condominio:")
                 println("Nombre:")
                 nuevoCondominio.setNombre(readln())

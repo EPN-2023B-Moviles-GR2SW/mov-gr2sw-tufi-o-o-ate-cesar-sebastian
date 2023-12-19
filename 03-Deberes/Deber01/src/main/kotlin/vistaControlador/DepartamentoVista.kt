@@ -28,7 +28,7 @@ class DepartamentoVista {
         val condominioDAO = CondominioDAO()
         when (opcion) {
             1 -> {
-                var departamento: Departamento = Departamento()
+                val departamento: Departamento = Departamento()
                 println("Ingrese la información del nuevo departamento:")
                 println("Número:")
                 departamento.setNumero(readln().toInt())
