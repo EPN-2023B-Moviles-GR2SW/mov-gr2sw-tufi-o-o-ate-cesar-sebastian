@@ -74,6 +74,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array string_array_opciones_dialogo
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3082,6 +3083,8 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id mi_editar
+id mi_eliminar
 id middle
 id mini
 id month_grid
@@ -3501,6 +3504,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

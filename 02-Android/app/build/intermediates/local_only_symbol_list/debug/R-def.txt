@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array string_array_opciones_dialogo
 color black
 color color_fondo
 color color_texto
@@ -16,11 +17,14 @@ id btn_ciclo_vida
 id btn_ir_list_view
 id cl_ciclo_vida
 id lv_list_view
+id mi_editar
+id mi_eliminar
 id textView
 id textView2
 layout activity_aciclo_vida
 layout activity_blist_view
 layout activity_main
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
