@@ -78,7 +78,7 @@ class DepartamentoDAO {
                     "${it.getInquilino()};" +
                     "${it.getCantidadDeHabitaciones()};" +
                     "${it.getArea()};" +
-                    "${it.getTieneBalcon()}" +
+                    "${it.getTieneBalcon()};" +
                     "${it.getCondominio().getId()}"
         }
         departamentoDatos.writeText(lineasActualizadas.joinToString("\n"))

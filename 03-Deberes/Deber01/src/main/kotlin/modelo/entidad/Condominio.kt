@@ -21,7 +21,6 @@ class Condominio(
 
     constructor() : this(null,"", "", LocalDate.now(), false, false)
 
-
     // Getters y Setters
     fun getId(): Int? {
         return id
