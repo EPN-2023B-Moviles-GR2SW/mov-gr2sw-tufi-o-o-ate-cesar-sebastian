@@ -1,6 +1,5 @@
 package modelo.dao
 
-import com.sun.org.apache.xpath.internal.operations.Bool
 import modelo.entidad.Departamento
 import java.io.File
 
@@ -17,7 +16,7 @@ class DepartamentoDAO {
         getAll().forEach { departamento: Departamento ->
             if (departamento.getId() == id) departamentoEncontrado = departamento
         }
-        return departamentoEncontrado;
+        return departamentoEncontrado
     }
 
     fun getAll(): ArrayList<Departamento> {
@@ -37,7 +36,7 @@ class DepartamentoDAO {
                 listaDeDepartamentos.add(departamento)
             }
         }
-        return listaDeDepartamentos;
+        return listaDeDepartamentos
     }
 
     fun create(departamento: Departamento) {
