@@ -2909,6 +2909,9 @@ id bounceEnd
 id bounceStart
 id btn_anadir_list_view
 id btn_ciclo_vida
+id btn_devolver_respuesta
+id btn_ir_intent_explicito
+id btn_ir_intent_implicito
 id btn_ir_list_view
 id buttonPanel
 id cache_measures
@@ -3029,6 +3032,7 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
+id id_layout_main
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3426,6 +3430,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_aciclo_vida
 layout activity_blist_view
+layout activity_cintent_explicito_parametros
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

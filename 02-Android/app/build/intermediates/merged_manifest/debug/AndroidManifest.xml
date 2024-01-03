@@ -27,6 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light" >
         <activity
+            android:name="com.example.b2023gr2sw.CIntentExplicitoParametros"
+            android:exported="false" />
+        <activity
             android:name="com.example.b2023gr2sw.BListView"
             android:exported="false" />
         <activity

@@ -14,8 +14,12 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id btn_anadir_list_view
 id btn_ciclo_vida
+id btn_devolver_respuesta
+id btn_ir_intent_explicito
+id btn_ir_intent_implicito
 id btn_ir_list_view
 id cl_ciclo_vida
+id id_layout_main
 id lv_list_view
 id mi_editar
 id mi_eliminar
@@ -23,6 +27,7 @@ id textView
 id textView2
 layout activity_aciclo_vida
 layout activity_blist_view
+layout activity_cintent_explicito_parametros
 layout activity_main
 menu menu
 mipmap ic_launcher
