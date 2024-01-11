@@ -2907,12 +2907,18 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_actualizar_bdd
 id btn_anadir_list_view
+id btn_buscar_bdd
 id btn_ciclo_vida
+id btn_crear_bdd
 id btn_devolver_respuesta
+id btn_eliminar_bdd
 id btn_ir_intent_explicito
 id btn_ir_intent_implicito
 id btn_ir_list_view
+id btn_recycler_view
+id btn_sqlite
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3041,6 +3047,9 @@ id immediateStop
 id included
 id indeterminate
 id info
+id input_descripcion
+id input_id
+id input_nombre
 id inspection_slot_table_set
 id invisible
 id inward
@@ -3431,6 +3440,8 @@ layout abc_tooltip
 layout activity_aciclo_vida
 layout activity_blist_view
 layout activity_cintent_explicito_parametros
+layout activity_ecrud_entrenador
+layout activity_frecycler_view
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

@@ -44,6 +44,10 @@
         "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_blist_view.xml"
     },
     {
+        "merged": "com.example.b2023gr2sw.app-merged_res-5:/layout_activity_ecrud_entrenador.xml.flat",
+        "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_ecrud_entrenador.xml"
+    },
+    {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "com.example.b2023gr2sw.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -78,6 +82,10 @@
     {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.b2023gr2sw.app-main-7:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.b2023gr2sw.app-merged_res-5:/layout_activity_frecycler_view.xml.flat",
+        "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_frecycler_view.xml"
     },
     {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/xml_data_extraction_rules.xml.flat",

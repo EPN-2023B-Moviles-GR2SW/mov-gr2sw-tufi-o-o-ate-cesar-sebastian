@@ -27,6 +27,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light" >
         <activity
+            android:name="com.example.b2023gr2sw.FRecyclerView"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b2023gr2sw.ECrudEntrenador"
+            android:exported="false" />
+        <activity
             android:name="com.example.b2023gr2sw.CIntentExplicitoParametros"
             android:exported="false" />
         <activity
