@@ -25,6 +25,7 @@ id btn_ir_list_view
 id btn_recycler_view
 id btn_sqlite
 id cl_ciclo_vida
+id cl_sqlite
 id id_layout_main
 id input_descripcion
 id input_id

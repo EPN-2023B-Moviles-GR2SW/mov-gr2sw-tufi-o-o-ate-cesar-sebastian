@@ -13,10 +13,16 @@
         android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
         <activity
-            android:name=".DepartamentoVer"
+            android:name=".DepartamentoEditar"
             android:exported="false" />
         <activity
-            android:name=".CondominioVer"
+            android:name=".CondominioEditar"
+            android:exported="false" />
+        <activity
+            android:name=".DepartamentosVer"
+            android:exported="false" />
+        <activity
+            android:name=".CondominiosVer"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
