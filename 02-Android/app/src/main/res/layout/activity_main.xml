@@ -95,4 +95,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toEndOf="@+id/btn_ir_list_view" />
+
+    <Button
+        android:id="@+id/btn_google_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="G. Maps"
+        app:layout_constraintBottom_toTopOf="@+id/btn_recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/btn_ir_intent_implicito" />
 </androidx.constraintlayout.widget.ConstraintLayout>
