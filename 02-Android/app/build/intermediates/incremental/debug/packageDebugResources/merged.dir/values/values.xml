@@ -23,5 +23,6 @@
     <string name="project_id" translatable="false">b2023-grsw2-csto</string>
     <string name="saludo" translatable="false">Buenos dias</string>
     <string name="texto">Texto</string>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
     <style name="Theme.B2023gr2sw" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>
