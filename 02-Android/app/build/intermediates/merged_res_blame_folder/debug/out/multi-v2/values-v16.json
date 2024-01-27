@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.b2023gr2sw.app-mergeDebugResources-59:/values-v16/values-v16.xml",
+            "outputFile": "com.example.b2023gr2sw.app-mergeDebugResources-3:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\escritorio.virtual27\\.gradle\\caches\\transforms-3\\eeaafe10e0b3afc2aa69351dbc66ea59\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\escritorio.virtual27\\.gradle\\caches\\transforms-3\\c7ae80878235a0bbaf098b7701fd6a1d\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\c7ae80878235a0bbaf098b7701fd6a1d\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\USER\\.gradle\\caches\\transforms-3\\eeaafe10e0b3afc2aa69351dbc66ea59\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

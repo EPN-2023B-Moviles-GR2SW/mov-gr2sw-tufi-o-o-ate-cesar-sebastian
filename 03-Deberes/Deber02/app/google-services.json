@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1033542813880",
+    "project_id": "examen01-7f010",
+    "storage_bucket": "examen01-7f010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033542813880:android:d0f5ae160fe02e93e98c4d",
+        "android_client_info": {
+          "package_name": "com.example.deber02"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN9q360u2CSTwnD4ArjiguIQpkJgoDN4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

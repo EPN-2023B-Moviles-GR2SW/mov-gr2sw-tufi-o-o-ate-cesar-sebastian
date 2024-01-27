@@ -21,6 +21,7 @@ id btn_dar_like
 id btn_devolver_respuesta
 id btn_eliminar_bdd
 id btn_google_maps
+id btn_intent_firebase_ui
 id btn_ir_carolina
 id btn_ir_intent_explicito
 id btn_ir_intent_implicito
@@ -52,6 +53,7 @@ layout activity_ecrud_entrenador
 layout activity_frecycler_view
 layout activity_ggoogle_maps
 layout activity_google_maps_inicio
+layout activity_hfirebase_uiauth
 layout activity_main
 layout recycler_view_vista
 menu menu
