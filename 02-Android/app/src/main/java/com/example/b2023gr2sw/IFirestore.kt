@@ -41,6 +41,49 @@ class IFirestore : AppCompatActivity() {
         botonOrderBy.setOnClickListener { consultarConOrderBy(adaptador) }
     } // FIN ONCREATE
 
+    fun consultarDocumento(
+        adaptador: ArrayAdapter<ICities>
+    ){
+        val db = Firebase.firestore
+        val citiesRefUnico = db.collection("cities")
+        limpiarArreglo()
+        adaptador.notifyDataSetChanged()
+        // Coleccion "ciudad"
+        //     -> Coleccion "barrio"
+        //            -> Coleccion "direccion"
+        // "Quito" => "La_Floresta" => "E90-001"
+        // db.collection("ciudad").document("Quito")
+        //   .collection("barrio").document("La Floresta").collection("direccion")
+        //   .document("E90-001")
+        // .collection("nombre_coleccion_hijo").document("id_hijo")
+        // .collection("nombre_coleccion_nieto").document("id_nieto")
+
+
+        citiesRefUnico
+            .document("BJ")
+            .get() // obtener 1 DOCUMENTO
+            .addOnSuccessListener {
+                // it=> ES UN OBJETO!
+                arreglo
+                    .add(
+                        ICities(
+                            it.data?.get("name") as String?,
+                            it.data?.get("state") as String?,
+                            it.data?.get("country") as String?,
+                            it.data?.get("capital") as Boolean?,
+                            it.data?.get("population") as Long?,
+                            it.data?.get("regions") as ArrayList<String>?,
+                        )
+                    )
+                adaptador.notifyDataSetChanged()
+
+
+            }
+            .addOnFailureListener {
+                // salio Mal
+            }
+    }
+
     fun limpiarArreglo () {
         arreglo.clear()
     }
