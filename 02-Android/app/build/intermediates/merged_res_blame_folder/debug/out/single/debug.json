@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.b2023gr2sw.app-merged_res-5:/layout_activity_ifirestore.xml.flat",
+        "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_ifirestore.xml"
+    },
+    {
         "merged": "com.example.b2023gr2sw.app-merged_res-5:/layout_activity_hfirebase_uiauth.xml.flat",
         "source": "com.example.b2023gr2sw.app-main-7:/layout/activity_hfirebase_uiauth.xml"
     },
