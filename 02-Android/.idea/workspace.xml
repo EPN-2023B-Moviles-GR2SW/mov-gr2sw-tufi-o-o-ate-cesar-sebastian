@@ -44,52 +44,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7320a680-9100-49ee-83b1-de63545f17db" name="Changes" comment="Clase 25">
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/androidTest/java/com/example/deber03/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/test/java/com/example/deber03/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/RecyclerViewTransferencia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/datos/BaseDeDatos.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/modelo/Banco.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/modelo/Contacto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/modelo/Cuenta.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/modelo/TipoDeCuenta.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/background_redondeado.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/background_redondeado_cuenta_externo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/background_redondeado_cuenta_interno.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/banco_guayaquil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/banco_pichincha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/rounded_button_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/rounded_card_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/drawable/tres_puntos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/activity_recycler_view_transferencia.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/recycler_view_contacto_propio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/recycler_view_cuenta_guayaquil.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/recycler_view_cuenta_pichincha.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/Contactos.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/Transacciones.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/java/com/example/deber03/RecyclerViewRecarga.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/activity_contactos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/activity_recycler_view_recarga.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/activity_transacciones.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/recycler_view_contactos.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/recycler_view_transacciones.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/layout/recycler_view_contacto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Deberes/Deber03/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +160,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
     "last_directory_selection": "C:/Moviles/repo/mov-gr2sw-tufino-onate-cesar-sebastian/02-Android/app/src/main/java",
     "last_opened_file_path": "C:/Users/escritorio.virtual27/Documents/Cesar/Moviles/repo/mov-gr2sw-tufino-onate-cesar-sebastian/02-Android/build.gradle.kts",
     "project.structure.last.edited": "Modules",

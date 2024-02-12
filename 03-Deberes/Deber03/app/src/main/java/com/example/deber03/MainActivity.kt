@@ -14,5 +14,23 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val botonTransferencia = findViewById<Button>(R.id.btn_transferencia)
+        botonTransferencia
+            .setOnClickListener{
+                irActividad(RecyclerViewTransferencia::class.java)
+            }
+        val botonRecarga = findViewById<Button>(R.id.btn_recarga)
+        botonRecarga
+            .setOnClickListener{
+                irActividad(RecyclerViewRecarga::class.java)
+            }
     }
+
+    fun irActividad(
+        clase: Class<*>
+    ){
+        val intent = Intent(this, clase)
+        startActivity(intent)
+    }
+
 }

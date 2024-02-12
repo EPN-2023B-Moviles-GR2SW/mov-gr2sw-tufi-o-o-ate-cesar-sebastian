@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="azul_tarjeta">#FFF8F8FA</color>
+    <color name="verde_claro">#FFE8F4E3</color>
+    <color name="verde_oscuro">#FF3A6E2E</color>
+    <color name="gris_oscuro">#FF8B8B8B</color>
+    <color name="rosado">#FFD2006E</color>
+    <color name="contacto_externo">#FF8A86A1</color>
+    <color name="gris_claro">#FFEEEEEE</color>
 </resources>
