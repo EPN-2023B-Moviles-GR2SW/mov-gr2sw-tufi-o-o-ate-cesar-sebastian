@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_ly_registro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="src_in"
+    tools:context=".Registro">
+
+
+    <TextView
+        android:id="@+id/tv_cine_guia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/sansita_italic"
+        android:text="Cine Guía"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_usuario_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="Usuario"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pt_usuario_registro"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Ingresa el Usuario"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/tv_usuario_registro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_usuario_registro"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usuario_registro" />
+
+    <TextView
+        android:id="@+id/tv_correo_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Correo"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pt_usuario_registro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_usuario_registro"
+        app:layout_constraintTop_toBottomOf="@+id/pt_usuario_registro" />
+
+    <EditText
+        android:id="@+id/pt_correo_registro"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Ingresa el Correo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/tv_correo_usuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_correo_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/tv_correo_usuario" />
+
+    <TextView
+        android:id="@+id/tv_contrasenia_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Contraseña"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pt_correo_registro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pt_correo_registro"
+        app:layout_constraintTop_toBottomOf="@+id/pt_correo_registro" />
+
+    <EditText
+        android:id="@+id/pt_contrasenia_registro"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Ingresa la Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tv_contrasenia_registro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_contrasenia_registro"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contrasenia_registro" />
+
+    <Button
+        android:id="@+id/btn_registrarme"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:background="@color/blue"
+        android:text="Registrarme"
+        android:textColor="@color/white"
+        android:textColorHighlight="#87A9C4"
+        android:textColorLink="#87A9C4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/mtb_registro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/iconoflecha"
+        app:title="Registro"
+        app:titleCentered="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

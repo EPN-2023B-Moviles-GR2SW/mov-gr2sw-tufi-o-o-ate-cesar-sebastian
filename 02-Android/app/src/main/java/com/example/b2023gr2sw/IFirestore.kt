@@ -33,7 +33,8 @@ class IFirestore : AppCompatActivity() {
         // Botones
         // Crear Datos Prueba
         val botonDatosPrueba = findViewById<Button>(
-            R.id.btn_fs_datos_prueba)
+            R.id.btn_fs_datos_prueba
+        )
         botonDatosPrueba.setOnClickListener { crearDatosPrueba() }
         // Order By
         val botonOrderBy = findViewById<Button>(R.id.btn_fs_order_by)
@@ -52,18 +53,22 @@ class IFirestore : AppCompatActivity() {
 
         // Boton Eliminar
         val botonFirebaseEliminar = findViewById<Button>(
-            R.id.btn_fs_eliminar)
+            R.id.btn_fs_eliminar
+        )
         botonFirebaseEliminar.setOnClickListener {
-            eliminarRegistro() }
+            eliminarRegistro()
+        }
         // Empezar a paginar
         val botonFirebaseEmpezarPaginar = findViewById<Button>(
-            R.id.btn_fs_epaginar)
+            R.id.btn_fs_epaginar
+        )
         botonFirebaseEmpezarPaginar.setOnClickListener {
             query = null; consultarCiudades(adaptador);
         }
         // Paginar
         val botonFirebasePaginar = findViewById<Button>(
-            R.id.btn_fs_paginar)
+            R.id.btn_fs_paginar
+        )
         botonFirebasePaginar.setOnClickListener {
             consultarCiudades(adaptador)
         }
@@ -79,7 +84,7 @@ class IFirestore : AppCompatActivity() {
 
     fun consultarIndiceCompuesto(
         adaptador: ArrayAdapter<ICities>
-    ){
+    ) {
         val db = Firebase.firestore
         val citiesRefUnico = db.collection("cities")
         limpiarArreglo()
@@ -90,12 +95,12 @@ class IFirestore : AppCompatActivity() {
             .orderBy("population", Query.Direction.DESCENDING)
             .get()
             .addOnSuccessListener {
-                for (ciudad in it){
+                for (ciudad in it) {
                     anadirAArregloCiudad(ciudad)
                 }
                 adaptador.notifyDataSetChanged()
             }
-            .addOnFailureListener {  }
+            .addOnFailureListener { }
     }
 
     fun consultarCiudades(
