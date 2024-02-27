@@ -3,18 +3,16 @@ package com.example.proyecto02
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.proyecto02.modelo.Pelicula
-import com.example.proyecto02.modelo.Resenia
-import com.example.proyecto02.modelo.Usuario
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 
 class ReseniaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +23,7 @@ class ReseniaActivity : AppCompatActivity() {
 
         if (pelicula != null) {
             findViewById<TextView>(R.id.tv_titulo_informacion).text = pelicula.titulo
-            findViewById<TextView>(R.id.tv_calificacion_informacion).text = "${pelicula.calificacion}/5"
+            findViewById<TextView>(R.id.tv_calificacion_informacion).text = "${pelicula.calificacion}/5.0"
             findViewById<TextView>(R.id.tv_duracion_informacion).text = "${pelicula.duracion} min"
 
             val storage = FirebaseStorage.getInstance()
@@ -36,7 +34,7 @@ class ReseniaActivity : AppCompatActivity() {
                 val imageUrl = uri.toString()
                 Glide.with(this)
                     .load(imageUrl)
-                    .into(findViewById(R.id.im_pelicula_informacion))
+                    .into(findViewById(R.id.iv_pelicula_reseñas))
             }.addOnFailureListener { exception ->
             }
         }
@@ -44,21 +42,25 @@ class ReseniaActivity : AppCompatActivity() {
         var perfil = findViewById<LinearLayout>(R.id.ly_perfil)
         perfil.setOnClickListener{
             irActividad(Perfil::class.java)
+            finish()
         }
 
         var busqueda = findViewById<LinearLayout>(R.id.ly_busqueda)
         busqueda.setOnClickListener{
             irActividad(Busqueda::class.java)
+            finish()
         }
 
         var inicio = findViewById<LinearLayout>(R.id.ly_inicio)
         inicio.setOnClickListener{
             irActividad(Inicio::class.java)
+            finish()
         }
 
-        val agregarReseñia = findViewById<Button>(R.id.btn_agregar_reseña)
-        agregarReseñia.setOnClickListener(){
-            irActividad(NuevaResenia::class.java)
+        val agregarResenia = findViewById<Button>(R.id.btn_agregar_resenia)
+        agregarResenia.setOnClickListener(){
+            irActividadConPelicula(NuevaResenia::class.java, pelicula!!)
+            finish()
         }
 
         val toolbar = findViewById<MaterialToolbar>(R.id.mtb_reseña)
@@ -66,30 +68,10 @@ class ReseniaActivity : AppCompatActivity() {
             finish()
         }
 
-        var arregloResenias = arrayListOf<Resenia>()
-        arregloResenias.add(
-            Resenia(
-                Usuario("Juan Perez","jp@gmail.com"),
-                LocalDate.now(),
-                "La película de cautiva con su trama intrigante y efectos" +
-                        " visuales impresionantes Aunque algunos puntos podrían mejorarse " +
-                        "en general es una experiencia emocionante y recomendable.",
-                4.0)
-        )
-        arregloResenias.add(
-            Resenia(
-                Usuario("Juan Perez","jp@gmail.com"),
-                LocalDate.now(),
-                "La película de cautiva con su trama intrigante y efectos" +
-                        " visuales impresionantes Aunque algunos puntos podrían mejorarse " +
-                        "en general es una experiencia emocionante y recomendable.",
-                4.0)
-        )
-
         val recyclerView = findViewById<RecyclerView>(R.id.rv_reseñas)
         val adaptador = RecyclerViewAdapterResenias(
             this,
-            arregloResenias,
+            pelicula!!.resenias,
             recyclerView
         )
         recyclerView.adapter = adaptador
@@ -99,12 +81,26 @@ class ReseniaActivity : AppCompatActivity() {
             .LinearLayoutManager(this)
         adaptador.notifyDataSetChanged()
 
+        var mAuth = FirebaseAuth.getInstance()
+
+        if (pelicula!!.resenias.any { it.usuario.nombre == mAuth.currentUser?.displayName.toString() }) {
+            agregarResenia.visibility = View.GONE
+        }
     }
 
     fun irActividad(
         clase: Class<*>
     ){
         val intent = Intent(this, clase)
+        startActivity(intent)
+    }
+
+    fun irActividadConPelicula(
+        clase: Class<*>,
+        pelicula: Pelicula
+    ){
+        val intent = Intent(this, clase)
+        intent.putExtra("pelicula", pelicula)
         startActivity(intent)
     }
 }

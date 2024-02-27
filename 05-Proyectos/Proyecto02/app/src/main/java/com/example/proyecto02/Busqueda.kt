@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto02.modelo.Genero
 import com.example.proyecto02.modelo.Pelicula
+import com.example.proyecto02.modelo.Resenia
+import com.example.proyecto02.modelo.Usuario
 import com.google.android.gms.tasks.Task
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.Timestamp
@@ -68,7 +70,7 @@ class Busqueda : AppCompatActivity() {
             arregloPeliculas,
             recyclerViewPelicula
         )
-        consultarColeccion()
+        //consultarColeccion()
         recyclerViewPelicula.adapter = adaptadorPeliculas
         recyclerViewPelicula.itemAnimator = androidx.recyclerview.widget
             .DefaultItemAnimator()
@@ -157,15 +159,41 @@ class Busqueda : AppCompatActivity() {
             document.data.get("director") as String,
             (document.data.get("date") as Timestamp).toDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate(),
             (document.data.get("genres") as ArrayList<Long>).map { Genero.obtenerPorId(it.toInt()) }.toTypedArray(),
-            (document.data.get("cast") as ArrayList<String>).toTypedArray()
+            (document.data.get("cast") as ArrayList<String>).toTypedArray(),
+            ArrayList()
         )
-        if (generoFiltrado == null || pelicula.generos.any { it == generoFiltrado }) {
-            if (tituloBuscado == "" || pelicula.titulo.lowercase(Locale.getDefault()).contains(tituloBuscado.lowercase(Locale.getDefault()))){
-                arregloPeliculas.add(pelicula)
-            }
+        val reviewCollection = document.reference.collection("review")
 
-        }
+        reviewCollection.get()
+            .addOnSuccessListener { reviewsSnapshot ->
+                val listaResenias = reviewsSnapshot.documents.map { resenia ->
+                    Resenia(
+                        Usuario(resenia.get("user") as String),
+                        (resenia.get("date") as Timestamp).toDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate(),
+                        resenia.get("comment") as String,
+                        (resenia.get("score") as? Number)?.toDouble() ?: 0.0
+                    )
+                }
+                pelicula.resenias = ArrayList(listaResenias)
+
+                // Agrega la película solo si el género y el título coinciden
+                if (generoFiltrado == null || pelicula.generos.any { it == generoFiltrado }) {
+                    if (tituloBuscado.isEmpty() || pelicula.titulo.lowercase(Locale.getDefault()).contains(tituloBuscado.lowercase(Locale.getDefault()))) {
+                        arregloPeliculas.add(pelicula)
+                    }
+                }
+
+                adaptadorPeliculas.notifyDataSetChanged()
+            }
+            .addOnFailureListener { e ->
+                // Manejar errores en la consulta de reseñas si es necesario
+            }
     }
 
+    override fun onResume() {
+        super.onResume()
+        consultarColeccion()
+        adaptadorPeliculas.notifyDataSetChanged()
+    }
 
 }

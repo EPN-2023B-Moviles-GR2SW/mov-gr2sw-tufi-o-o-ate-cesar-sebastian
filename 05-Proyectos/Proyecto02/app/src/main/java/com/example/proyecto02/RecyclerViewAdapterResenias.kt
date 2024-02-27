@@ -8,6 +8,7 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto02.modelo.Resenia
+import java.time.format.DateTimeFormatter
 import java.util.ArrayList
 
 class RecyclerViewAdapterResenias(
@@ -46,11 +47,13 @@ class RecyclerViewAdapterResenias(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val reseñaActual = this.lista[position]
-        //holder.usuarioTextView.text = reseñaActual.usuario
-        //holder.fechaTextView.text = reseñaActual.fecha
-        //holder.comentarioTextView.text = reseñaActual.comentrario
-        //holder.calificacion.rating = reseñaActual.calificaion
+        val reseniaActual = this.lista[position]
+        holder.usuarioTextView.text = reseniaActual.usuario.nombre
+        val formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
+        holder.fechaTextView.text = reseniaActual.fecha.format(formatter)
+        holder.comentarioTextView.text = reseniaActual.comentrario
+        val calificacionNormalizada = reseniaActual.calificacion.toFloat().coerceIn(0f, 5f)
+        holder.calificacion.rating = calificacionNormalizada
     }
 
     fun irActividad(

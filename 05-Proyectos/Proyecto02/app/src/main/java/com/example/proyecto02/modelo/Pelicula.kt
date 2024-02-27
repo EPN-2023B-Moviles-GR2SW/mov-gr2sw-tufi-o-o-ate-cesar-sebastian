@@ -4,7 +4,7 @@ import java.io.Serializable
 import java.time.LocalDate
 
 class Pelicula(
-    var ir: String,
+    var id: String,
     var titulo: String,
     var calificacion: Double,
     var duracion: Int,
@@ -14,7 +14,7 @@ class Pelicula(
     var fecha: LocalDate,
     var generos: Array<Genero?>,
     var elenco: Array<String>,
-    var resenias: Array<Resenia>? = null
+    var resenias: ArrayList<Resenia>
 ) :Serializable {
 
     override fun toString(): String {

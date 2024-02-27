@@ -164,7 +164,7 @@
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <Button
-        android:id="@+id/btn_agregar_reseña"
+        android:id="@+id/btn_agregar_resenia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -174,7 +174,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/et_comentario" />
 
     <TextView
         android:id="@+id/tv_calificacion_nueva_resenia"
@@ -191,7 +191,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_pelicula_calificacion" />
 
     <RatingBar
-        android:id="@+id/ratingBar2"
+        android:id="@+id/rb_resenia"
         android:layout_width="243dp"
         android:layout_height="43dp"
         android:layout_marginTop="16dp"
@@ -212,13 +212,13 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/ratingBar2"
+        app:layout_constraintEnd_toEndOf="@+id/rb_resenia"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/ratingBar2"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+        app:layout_constraintStart_toStartOf="@+id/rb_resenia"
+        app:layout_constraintTop_toBottomOf="@+id/rb_resenia" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/et_comentario"
         android:layout_width="0dp"
         android:layout_height="120dp"
         android:layout_marginStart="32dp"

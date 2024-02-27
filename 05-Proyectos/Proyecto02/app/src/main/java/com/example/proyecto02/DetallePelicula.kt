@@ -22,7 +22,7 @@ class DetallePelicula : AppCompatActivity() {
 
         if (pelicula != null) {
             findViewById<TextView>(R.id.tv_titulo_informacion).text = pelicula.titulo
-            findViewById<TextView>(R.id.tv_calificacion_informacion).text = "${pelicula.calificacion}/5"
+            findViewById<TextView>(R.id.tv_calificacion_informacion).text = "${pelicula.calificacion}/5.0"
             findViewById<TextView>(R.id.tv_duracion_informacion).text = "${pelicula.duracion} min"
 
             val storage = FirebaseStorage.getInstance()

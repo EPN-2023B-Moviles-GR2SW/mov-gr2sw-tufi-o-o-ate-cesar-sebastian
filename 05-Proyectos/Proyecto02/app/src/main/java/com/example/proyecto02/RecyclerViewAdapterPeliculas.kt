@@ -66,7 +66,7 @@ class RecyclerViewAdapterPeliculas (
         }
 
         holder.tituloTextView.text = peliculaActual.titulo
-        holder.calificacionTextView.text = "${peliculaActual.calificacion}/5"
+        holder.calificacionTextView.text = "${peliculaActual.calificacion}/5.0"
         holder.duracionTextView.text = "${peliculaActual.duracion} min"
 
         holder.informacionButton.setOnClickListener{
