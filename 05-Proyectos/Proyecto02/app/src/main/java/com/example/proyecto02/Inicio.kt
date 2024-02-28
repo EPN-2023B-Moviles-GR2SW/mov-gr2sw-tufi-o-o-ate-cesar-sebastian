@@ -79,8 +79,8 @@ class Inicio : AppCompatActivity() {
             tarea
                 .addOnSuccessListener { documentSnapshots ->
                     guardarQuery(documentSnapshots, ref)
-                    for (condominio in documentSnapshots) {
-                        anadirAArreglo(condominio)
+                    for (pelicula in documentSnapshots) {
+                        anadirAArreglo(pelicula)
                     }
                     adaptador.notifyDataSetChanged()
                 }
